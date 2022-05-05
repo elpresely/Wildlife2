@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hospital Form</title>
+    <style>
+        div{
+            padding: 2px;
+        }
+        form{
+            width: 100%;
+            border: navy 2px solid;
+            background-image: url("hopital image/hospital reception.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            text-decoration-color: navy;
+
+        }
+        .input{
+            border: black solid 2px;
+            padding: 2px 2px;
+            width: 50%;
+            font-size: large;
+        }
+        .button{
+            width: 40%;
+            padding: 12px 12px;
+            background-color: red;
+        }
+        label{
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<h3> Please fill in this form.</h3>
+</body>
+<form action="3#">
+    <h2 style="color: orange"> PATIENT DETAILS</h2>
+    <div>
+        <label> Full Name</label><br>
+        <input  class="input" name="Full Name" required placeholder="eg Elvis Kosgei">
+    </div>
+
+    <div>
+        <label> Phone Number*</label><br>
+        <input class="input" type="tel" name="Phone number" required value="+254">
+    </div>
+
+    <div>
+        <label> Postal Address*</label><br>
+        <input class="input" type="text" name="Postal Address" required>
+
+
+        <div>
+            <label> Date of birth*</label><br>
+            <input type="datetime-local" name="Date of Birth" required >
+        </div>
+
+        <div>
+            <label > Gender* </label><br>
+            <input type="radio" name="Gender" value="Male" required>
+            <label>Male</label>
+
+            <input type="radio" name="Gender" value="Female" required>
+            <label>Female</label>
+        </div>
+
+
+        <div>
+            <h3 style="color: blue"> NEXT OF KIN</h3><br>
+            <label>Full Name*</label><br>
+            <input class="input" type="text" name="Full Name" placeholder="eg Elvis Kosgei" required>
+
+        </div>
+        <div>
+            <label> Relationship to patient*</label><br>
+            <input class="input" type="text" name="Relationship to patient" required>
+        </div>
+        <div>
+            <label> Phone Number*</label><br>
+            <input class="input" type="tel" name="Phone number" required value="+254">
+        </div>
+
+        <div>
+            <label> Postal Address*</label><br>
+            <input class="input" type="text" name="Postal Address" required>
+        </div>
+
+      <div>
+
+
+        <p>
+            <mark> Please check the boxes to indicate which payment method you will use  </mark>
+        </p>
+        <label style="color: blue"> PAYMENT INFORMATION*</label><br>
+        <select name="PAYMENT INFORMATION" id=" Payment Information">
+            <option value="Insurance">Insurance</option>
+            <option value="Cash"> Cash </option>
+        </select>
+
+    </div>
+        <div>
+            <input class="button" type="submit" name="Submit" value="Submit">
+        </div>
+
+
+    </form>
+</html>
